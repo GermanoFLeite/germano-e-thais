@@ -9,20 +9,18 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: #f0f0f0;
   }
 
   .content {
     text-align: center;
     max-width: 90%; /* Reduzindo a largura máxima para telas menores */
+    margin: auto; /* Centralizando o box */
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-top: 20px; /* Espaço no topo do box */
   }
 
   .editable-text {
@@ -44,7 +42,6 @@
     background-color: #007bff;
     color: #fff;
     border-radius: 4px;
-    text-decoration: none; /* Removendo sublinhado */
     transition: background-color 0.3s;
   }
 
@@ -52,9 +49,15 @@
     background-color: #0056b3;
   }
 
+  .link a {
+    text-decoration: none; /* Removendo sublinhado do link */
+    color: #fff; /* Cor da fonte do link */
+  }
+
   @media (max-width: 768px) { /* Aplicar estilos abaixo de 768px (tamanho de tablet e celular) */
     .content {
-      max-width: 100%;
+      max-width: 95%;
+      margin-top: 100px;
     }
     .link {
       padding: 8px 16px;
@@ -86,7 +89,7 @@
       <p>Se você esqueceu de dar uma olhada no nosso site, é um bom momento para dar uma passadinha lá e nos deixar um recado! ❤</p>
     </div>
     <div class="link">
-      casar.com
+      <a href="https://noivos.casar.com/germano-e-thais">casar.com</a>
     </div>
   </div>
 </body>

@@ -88,33 +88,39 @@
       text-decoration: none;
     }
 
-    .spotfy img {
+    .spotfy iframe {
       border-radius: 15px;
       width: 40%;
-    }
-
-    /* Estilos para o botão */
-    .carousel-button {
-      width: 10%;
-      height: 50px;
-      background-color: #007BFF;
-      color: white;
-      text-align: center;
-      line-height: 50px;
-      cursor: pointer;
-    }
-
-    #image1 {
-      width: 50%;
-    }
-
-    /* Estilos para o ícone de seta (pode usar um ícone real em vez de texto) */
-    .carousel-button::before {
-      content: '➡️';
-      /* Substitua isso por um ícone real se preferir */
       display: inline-block;
-      margin-right: 5px;
     }
+
+    .imagem-cha img {
+      border-radius: 15px;
+      width: 50%;
+      padding: 20px;
+    }
+
+    .imagem-cha a {
+      text-decoration: none;     
+    }
+
+    /* Estilos para o contêiner do iframe */
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      /* Defina uma proporção desejada (por exemplo, 16:9 para um vídeo) */
+      padding-top: 56.25%; /* 9/16 = 56.25% */
+    }
+
+    /* Estilos para o iframe */
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
 
     @media (max-width: 768px) {
 
@@ -135,10 +141,11 @@
       .spotfy a {
         text-decoration: none;
       }
-
-      .spotfy img {
-        border-radius: 15px;
-        width: 90%;
+      
+      .imagem-cha img {
+        top: 0;
+        left: 0;
+        width: 50%;
       }
 
     }
@@ -153,28 +160,34 @@
     </div>
     <div class="editable-text">
       <!-- Substitua o texto abaixo pelo texto editável desejado -->
-      <p>Ei, psiu!</p>
+      <p>Ei, psiu!</p> <br>
       <p>Muuuuuito obrigado por terem vindo ao nosso chá! Estamos felizes por vocês estarem conosco nesse momento tão
         importante. ❤</p>
     </div>
 
     <div class="editable-text">
       <!-- Substitua o texto abaixo pelo texto editável desejado -->
-      <p>Essa playlist é a nossa cara! Da uma olhadinha.</p>
+      <p>Essa playlist é a nossa cara! Da uma olhadinha. Abaixo, temos as fotos disponíveis.</p>
     </div>
 
     <div class="spotfy">
-      <a href="https://open.spotify.com/playlist/0aX1QaIbm0lp50oVE2jixv?si=AUEsT0kISc-5760TyeHAUA">
-        <img src="src/assets/spotfy.jpeg" alt="link do spotfy">
-      </a>
-    </div>
+      <div class="iframe-container">
+        <a href="https://open.spotify.com/playlist/0aX1QaIbm0lp50oVE2jixv?si=AUEsT0kISc-5760TyeHAUA">
+          <iframe style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/0aX1QaIbm0lp50oVE2jixv?utm_source=generator"
+            frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </a>
+      </div>
+    </div>    
 
-    <div class="spotfy">
+    <div class="imagem-cha">
       <a href="https://drive.google.com/drive/folders/1CA66peTJB1OYOxhO7tEaFhfREnCOKdln?usp=sharing">
-        <img src="src/assets/spotfy.jpeg" alt="link do spotfy">
-      </a>
+        <img src="src/assets/gd1.png" alt="imagem chá">
       </a>
     </div>
+
+
 
   </div>
 

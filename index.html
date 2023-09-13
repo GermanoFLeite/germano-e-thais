@@ -34,13 +34,17 @@
       text-decoration: none;
     }
 
-    .editable-text p{
+    .editable-text p {
       width: 80%;
       position: relative;
-      top: 50%; /* Move o elemento para 50% da altura do contêiner */
-      left: 50%; /* Move o elemento para 50% da largura do contêiner */
-      transform: translate(-50%, -50%); /* Reposiciona o elemento para o centro */
+      top: 50%;
+      /* Move o elemento para 50% da altura do contêiner */
+      left: 50%;
+      /* Move o elemento para 50% da largura do contêiner */
+      transform: translate(-50%, -50%);
+      /* Reposiciona o elemento para o centro */
     }
+
     .editable-image {
       max-width: 80%;
       height: auto;
@@ -54,10 +58,14 @@
       border-radius: 4px;
       transition: background-color 0.3s;
       width: 45%;
-      position: relative; /* Define o contêiner como posição relativa */
-      top: 50%; /* Move o elemento para 50% da altura do contêiner */
-      left: 50%; /* Move o elemento para 50% da largura do contêiner */
-      transform: translate(-50%, -50%); /* Reposiciona o elemento para o centro */
+      position: relative;
+      /* Define o contêiner como posição relativa */
+      top: 50%;
+      /* Move o elemento para 50% da altura do contêiner */
+      left: 50%;
+      /* Move o elemento para 50% da largura do contêiner */
+      transform: translate(-50%, -50%);
+      /* Reposiciona o elemento para o centro */
     }
 
     .spotfy {
@@ -76,13 +84,36 @@
       /* Cor da fonte do link */
     }
 
-    .spotfy a{
+    .spotfy a {
       text-decoration: none;
     }
 
-    .spotfy img{
+    .spotfy img {
       border-radius: 15px;
       width: 40%;
+    }
+
+    /* Estilos para o botão */
+    .carousel-button {
+      width: 10%;
+      height: 50px;
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+
+    #image1 {
+      width: 50%;
+    }
+
+    /* Estilos para o ícone de seta (pode usar um ícone real em vez de texto) */
+    .carousel-button::before {
+      content: '➡️';
+      /* Substitua isso por um ícone real se preferir */
+      display: inline-block;
+      margin-right: 5px;
     }
 
     @media (max-width: 768px) {
@@ -101,11 +132,11 @@
         font-size: 16px;
       }
 
-      .spotfy a{
+      .spotfy a {
         text-decoration: none;
       }
-  
-      .spotfy img{
+
+      .spotfy img {
         border-radius: 15px;
         width: 90%;
       }
@@ -123,7 +154,8 @@
     <div class="editable-text">
       <!-- Substitua o texto abaixo pelo texto editável desejado -->
       <p>Ei, psiu!</p>
-      <p>Muuuuuito obrigado por terem vindo ao nosso chá! Estamos felizes por vocês estarem conosco nesse momento tão importante. ❤</p>
+      <p>Muuuuuito obrigado por terem vindo ao nosso chá! Estamos felizes por vocês estarem conosco nesse momento tão
+        importante. ❤</p>
     </div>
 
     <div class="editable-text">
@@ -137,6 +169,12 @@
       </a>
     </div>
 
+    <div class="spotfy">
+      <a href="https://drive.google.com/drive/folders/1CA66peTJB1OYOxhO7tEaFhfREnCOKdln?usp=sharing">
+        <img src="src/assets/spotfy.jpeg" alt="link do spotfy">
+      </a>
+      </a>
+    </div>
 
   </div>
 
